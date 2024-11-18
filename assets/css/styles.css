@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+/* Variables */
+
+:root {
+
+    /* Colours */
+    --violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+
+
+/* Generic card style */
+
+.card-style {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-radius: 8px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.profile-details {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 18px;
+}
+
+.name {
+    margin-bottom: 4px;
+}
+
