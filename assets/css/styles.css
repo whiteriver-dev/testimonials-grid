@@ -8,11 +8,13 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
     height: 100vh;
+}
+
+html, body {
     background-color: var(--light-grayish-blue);
-    height: auto;
-    max-height: 100vh;
+    height: 100%;
 }
 
 /* Variables */
@@ -128,7 +130,7 @@ html, body {
     /* Centering */
 
     html {
-        padding: 18.2% 11.3%;
+
     }
 
     body {
@@ -136,12 +138,45 @@ html, body {
         justify-content: center;
         align-items: center;
         flex: 1 1 auto;
-
+        padding: 11.3%;
     }
+
+    /* Grid style */
 
     .testimonials-content {
         margin: 0;
-
         display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 51% 1fr;
+        gap: 24px;
+        max-width: 100%;
+        height: 100%;
+    }
+
+
+    /* Card placements on grid */
+    .card-1 {
+        grid-column: 1 / 7;
+        grid-row: 1 / 2;
+    }
+
+    .card-2 {
+        grid-column: 7 / 10;
+        grid-row: 1 / 2;
+    }
+
+    .card-5 {
+        grid-column: 10 / 13;
+        grid-row: 1 / 3;
+    }
+
+    .card-3 {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .card-4 {
+        grid-column: 4 / 10;
+        grid-row: 2 / 3;
     }
 }
