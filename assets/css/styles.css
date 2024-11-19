@@ -10,6 +10,9 @@
 
 html, body {
     height: 100vh;
+    background-color: var(--light-grayish-blue);
+    height: auto;
+    max-height: 100vh;
 }
 
 /* Variables */
@@ -27,18 +30,41 @@ html, body {
 }
 
 
+/* Margins, paddings, alignment */
+
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin: 6.4% 18.9%;
+}
+
 /* Generic card style */
 
 .card-style {
+    font-family: 'Barlow Semi Condensed';
+    color: white;
+    font-weight: 500;
+    
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 26px;
-    padding-bottom: 26px;
+    padding-bottom: 32px;
+
     border-radius: 8px;
+
+}
+
+.light--background {
+    color: var(--grayish-blue);
 }
 
 .profile-pic {
     border-radius: 50%;
+
+    width: 28px;
+    height: 28px;
 }
 
 .profile-details {
@@ -49,5 +75,73 @@ html, body {
 
 .name {
     margin-bottom: 4px;
+    font-size: 13px;
 }
 
+.role {
+    font-size: 11px;
+    opacity: 0.5;
+}
+
+.testimonial-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.testimonial {
+    font-size: 13px;
+    opacity: 0.7;
+    line-height: 18px;
+}
+
+/* Indivudal card styles */
+
+.card-1 {
+    background-color: var(--violet);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+.card-2 {
+    background-color: var(--grayish-blue);
+}
+
+.card-3 {
+    background-color: white;
+}
+
+.card-4 {
+    background-color: var(--blackish-blue);
+}
+
+.card-5 {
+    background-color: white;
+}
+
+/* Desktop styles for screens bigger than 768px */
+
+@media (min-width: 768px) {
+
+
+    /* Centering */
+
+    html {
+        padding: 18.2% 11.3%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 auto;
+
+    }
+
+    .testimonials-content {
+        margin: 0;
+
+        display: grid;
+    }
+}
