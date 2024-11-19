@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Purpose](#purpose)
-- [What I will use](#what-i-will-use)
+- [What I used](#what-i-used)
 - [What's Different](#whats-different)
 - [Challenges I came Across](#challenges-i-came-across)
 - [Links](#links)
@@ -12,7 +12,7 @@
 
 The purpose of this project is to increase proficiency in using CSS Grid. 
 
-## What I will use
+## What I used
 
 - Semantic HTML
 - CSS Flex
@@ -29,6 +29,7 @@ The purpose of this project is to increase proficiency in using CSS Grid.
 - Had trouble making text responsive and making it stay in the respective cards
 - Adjusted that with a clamp on text
 - Assigned max width and height so that text does not overflow
+- I stopped trying to match the design file to a pixel - and intead focused on responsiveness rather than matching exact design details
 
 
 ### Links
